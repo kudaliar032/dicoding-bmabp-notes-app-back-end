@@ -16,7 +16,7 @@ const addNoteHandler = (request, h) => {
 
   if (isSuccess) {
     const response = h.response({
-      statues: 'succes',
+      status: 'success',
       message: 'Catatan berhasil ditambahkan',
       data: {
         noteId: id,
@@ -81,7 +81,7 @@ const editNoteByIdHandler = (request, h) => {
     };
 
     const response = h.response({
-      status: 'status',
+      status: 'success',
       message: 'Catatan berhasil diperbarui',
     });
 
